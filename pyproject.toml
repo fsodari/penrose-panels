@@ -8,7 +8,11 @@ classifiers = [
     "License :: OSI Approved :: GNU Affero General Public License v3",
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "cairosvg>=2.7.1",
+    "numpy>=2.2.1",
+    "scipy>=1.15.1",
+]
 
 [tool.hatch.version]
 path = "src/penrose_panels/__about__.py"
@@ -21,4 +25,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [dependency-groups]
-dev = ["pytest>=8.3.4"]
+dev = [
+    "matplotlib>=3.10.0",
+    "pytest>=8.3.4",
+    "seaborn>=0.13.2",
+]
